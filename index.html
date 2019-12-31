@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Sintony&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    
+    <title>Document</title>
 </head>
 <body>
-    <div class='wrapper'>
+    <div class="wrapper">
         <div class="container">
-            <div class="bodyToDo"></div>
-            <div class="toDoLabel">ToDoList</div>
-            <div class="toDoLayer">
-                <form action="">
-                    <input type="text" class="search" value="Wyszukaj">
-                    <input type="text" class="typeElement" value="Dodaj">
-                    <button class="addElement" type="submit">Dodaj Zadanie</button>
-                    <h3>Ilosc Zadan do wykonania: <span>0</span></h3>
-                </form>
+            <div class="toDoLabel">
+                <div class="shadow">
+                <span>T</span>
+                <span>O</span>
+                <span>D</span>
+                <span>O</span>
+                <span>S</span>
             </div>
-            <div class="ulElements">
-                    <ul></ul>
+            </div>
+                <div class="toDoBody">
+                    <form action="">
+                        <input type="text" onfocus="this.value=''" value="Wyszukaj" class="search">
+                        <input type="text" onfocus="this.value=''" value="Dodaj nowy Task do zrobienia" class="addInput">
+                        <button class="add">Dodaj</button>
+                    </form>
+                    
+                    <h3>Liczba zadan do zrobienia: <span>0</span></h3>
+                    <form action="">
+                        <input type="text" onfocus="this.value=''" value="edytuj Task do zrobienia" class="editInput">
+                        <button class="edit_me">Dodaj</button>
+                    </form>
+                    <!-- <ul>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, rem ducimus. Ducimus qui recusandae commodi incidunt odio facilis corrupti similique expedita nulla accusantium deserunt cum nihil autem, consequatur non possimus, praesentium minus eum natus quis, cumque dolorem ullam inventore. Neque distinctio corporis possimus aspernatur quos reiciendis, dolorum at adipisci id? ipsum dolor sit amet.<button class='edit'>edutuj</button><button class='delate'>usun</button></li> 
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nostrum temporibus vero.<button class='edit'>edutuj</button><button class='delate'>usun</button></li> 
+                        <li>Lorem ipsum dolor sit amet. <button class='edit'>edutuj</button><button class='delate'>usun</button></li> 
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore molestiae odit ipsum aliquid? Ipsa, sunt error est obcaecati ex harum modi nihil nemo. <button class='edit'>edutuj</button><button class='delate'>usun</button></li> 
+                    </ul> -->
             </div>
         </div>
     </div>
-    <script src='javascript.js'></script>
+    <script src="js.js"></script>
 </body>
 </html>

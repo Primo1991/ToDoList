@@ -1,101 +1,160 @@
+
+/* 
+    font-family: 'Boogaloo', cursive;
+
+    font-family: 'Sintony', sans-serif;
+ */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ffbd69;
-    font-size: 0.9rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    
+    font-family: 'Sintony', sans-serif;
 }
 
 .wrapper {
-    z-index: -30;
-    background-color: #111d5e;
-    height: 100vh;
+    background-color: #f9f7f7;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.container {
-    z-index:0;
-    background-color: #b21f66;
-    width: 350px;
-    height: 450px;
-    position: relative;
-    border: 2px solid #ffbd69;
-
-}
-
-
-.toDoLabel {
-    padding: 2px 15px;
-    position: absolute;
-    top: -26px;
-    left: 25px;
-    background-color: #b21f66;
-    z-index: -1;
-    font-size: 1.5rem;
-    border: 2px solid #ffbd69;
-}
-.toDoLayer {
-    z-index: 1;
-    background-color: #b21f66;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.ulElements {
-    min-height: 200px;
-    width: 100%;
-    z-index: 3;
-    background-color: #b21f66;
     
 }
-
-form {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 320px;
-    padding-top: 20px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-areas: 
-    "searchElement searchElement searchElement"
-    "addElement addElement addButton"
-    "counterElements counterElements counterElements";
+.container {
+    margin: 50px;
+    width: 700px;
+    min-height: 600px;
+    background-color: #dbe2ef;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 1px grey;
 }
-input,button{
-    padding: 5px 10px;
-    border: none;
-    border-bottom: 1px solid white;
-    background-color:  rgba(0,0,0,0.1);
-    font-size: 0.7rem;
-
+.toDoBody {
+    max-width: 700px;
 }
+.toDoLabel   {
+    display:    flex;
+    width: 100vw;
+  align-items: center;
+    justify-content: center;
+}
+.shadow {
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px #ced0d3;
+    color: white;
+    letter-spacing: -0.25em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    padding: 50px 0;
+}  
 button {
- background-color: #111d5e;
- border: none;
- font-size: 0.7rem;
+    text-transform: uppercase;
+}
+.shadows:hover {
+    text-shadow: -16px 6px 15px #ced0d3;
 }
 
-.search{
-    grid-area: searchElement;
-  }
-  .typeElement {
-    grid-area: addElement;
-  }
-  .addElement {
-    grid-area: addButton;
-  }
-  h3{
-    grid-area: counterElements;
-    margin-top: 10px;
-  }
-  
-
-  textarea:focus, input:focus{
-    outline: none;
+.toDoLabel span {
+    font-family: 'Boogaloo', cursive;
+    font-size: 5rem;
+    margin: auto;
+    padding-bottom: 20px;
 }
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid #112d4e;
+    width: 100%;
+    margin: 10px 50px;
+}
+
+.editInput {
+    display: none;
+}
+.edit_me {
+    display: none;
+}
+.add {
+    margin: 20px 0px;
+    padding: 10px 10px;
+    background-color: #3f72af;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+    color: white;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    max-width: 500px;
+    min-width: 500px;
+    margin: auto;
+}
+h3 {
+    color: #112d4e;
+    padding: 20px 0px;
+    width: 80%;
+    margin: auto;
+    color: #112d4e;
+
+}
+ul >li > .delate  {
+    float: right;
+    background-color: #3f72af;
+    border: none;
+    padding: 7px 14px;
+    color: white;
+}
+
+ul >li > .edit {
+    background-color: #ced0d3;
+    float: right;
+    border: none;
+    margin-left: 2px;
+    padding: 7px 10px;
+}
+ul {
+    padding: 5px 10px;
+    color: #112d4e;
+    list-style-type: none;
+    max-width: 100%;
+    margin: auto;
+}
+
+ul> li {
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    position: relative;
+    max-width: 600px;
+    min-width: 600px;
+    text-align: justify;
+    background-color: #fff;
+    padding: 14px 14px 45px 14px;
+    color: #555;
+}
+
+.edit {
+    position: absolute;
+    right: 80px;
+    bottom: -10px;
+    font-size: 0.7rem;
+}
+.delate {
+    position: absolute;
+    right: 17px;
+    bottom: -10px;
+    font-size: 0.8rem;
+}
+
+
