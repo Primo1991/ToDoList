@@ -75,12 +75,6 @@ input {
     margin: 10px 50px;
 }
 
-.editInput {
-    display: none;
-}
-.edit_me {
-    display: none;
-}
 .add {
     margin: 20px 0px;
     padding: 10px 10px;
@@ -116,13 +110,6 @@ ul >li > .delate  {
     color: white;
 }
 
-ul >li > .edit {
-    background-color: #ced0d3;
-    float: right;
-    border: none;
-    margin-left: 2px;
-    padding: 7px 10px;
-}
 ul {
     padding: 5px 10px;
     color: #112d4e;
@@ -144,12 +131,6 @@ ul> li {
     color: #555;
 }
 
-.edit {
-    position: absolute;
-    right: 80px;
-    bottom: -10px;
-    font-size: 0.7rem;
-}
 .delate {
     position: absolute;
     right: 17px;
